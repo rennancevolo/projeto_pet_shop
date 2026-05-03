@@ -628,12 +628,12 @@ img {
   .menu-toggle {
     display: flex;
     position: relative;
-    z-index: 1200;
+    z-index: 1400;
   }
 
   .logo {
     position: relative;
-    z-index: 1000;
+    z-index: 1200;
   }
 
   .nav {
@@ -651,7 +651,7 @@ img {
     padding: 0 var(--space-xl);
     box-shadow: var(--shadow-xl);
     transition: right var(--transition-base);
-    z-index: 1100;
+    z-index: 1300;
   }
 
   .nav.open {
@@ -659,7 +659,7 @@ img {
   }
 
   .nav-overlay {
-    z-index: 1090;
+    z-index: 800;
     backdrop-filter: none;
     -webkit-backdrop-filter: none;
   }
