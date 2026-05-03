@@ -1,0 +1,76 @@
+/* ========================================
+   Serviços Page Styles
+   ======================================== */
+
+.servicos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-xl);
+}
+
+.servico-card {
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--color-border);
+  transition: var(--transition-base);
+}
+
+.servico-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+  border-color: transparent;
+}
+
+.servico-card-image {
+  height: 200px;
+  background: linear-gradient(135deg, var(--color-primary-light) 0%, var(--color-secondary-light) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.servico-card-image svg {
+  width: 64px;
+  height: 64px;
+  fill: var(--color-primary);
+  opacity: 0.6;
+  transition: var(--transition-base);
+}
+
+.servico-card:hover .servico-card-image svg {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.servico-card-body {
+  padding: var(--space-xl);
+}
+
+.servico-card-body h3 {
+  font-family: var(--font-heading);
+  font-size: var(--text-2xl);
+  margin-bottom: var(--space-sm);
+}
+
+.servico-card-body p {
+  font-size: var(--text-sm);
+  color: var(--color-text-light);
+  line-height: 1.7;
+  margin-bottom: var(--space-lg);
+}
+
+.servico-card-body .btn {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .servicos-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 480px) {
+  .servicos-grid { grid-template-columns: 1fr; max-width: 400px; margin: 0 auto; }
+}

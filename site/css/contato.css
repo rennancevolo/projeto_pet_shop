@@ -1,0 +1,82 @@
+/* ========================================
+   Contato Page Styles
+   ======================================== */
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-xl);
+  margin-bottom: var(--space-4xl);
+}
+
+.contact-card {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-lg);
+  padding: var(--space-2xl);
+}
+
+.contact-card-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.contact-card-icon.whatsapp { background: rgba(37,211,102,0.1); }
+.contact-card-icon.whatsapp svg { fill: var(--color-whatsapp); }
+.contact-card-icon.instagram { background: rgba(225,48,108,0.1); }
+.contact-card-icon.instagram svg { fill: #E1306C; }
+.contact-card-icon.location { background: var(--color-primary-light); }
+.contact-card-icon.location svg { fill: var(--color-primary); }
+.contact-card-icon.clock { background: rgba(232,126,29,0.1); }
+.contact-card-icon.clock svg { fill: var(--color-secondary); }
+
+.contact-card-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.contact-card h3 {
+  font-family: var(--font-heading);
+  font-size: var(--text-xl);
+  margin-bottom: var(--space-sm);
+}
+
+.contact-card p {
+  font-size: var(--text-sm);
+  color: var(--color-text-light);
+  line-height: 1.7;
+}
+
+.contact-card a {
+  color: var(--color-primary);
+  font-weight: 600;
+  transition: color var(--transition-fast);
+}
+
+.contact-card a:hover {
+  color: var(--color-primary-dark);
+}
+
+/* Map Section */
+.contact-map {
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  height: 400px;
+}
+
+.contact-map iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .contact-grid { grid-template-columns: 1fr; }
+  .contact-map { height: 300px; }
+}

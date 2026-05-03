@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Serviços — Empório dos Bichos</title>
+  <meta name="description" content="Confira os serviços do Empório dos Bichos: banho e tosa, ração, brinquedos, farmácia pet e produtos para cães e gatos.">
+  <meta property="og:title" content="Serviços — Empório dos Bichos">
+  <meta property="og:description" content="Banho, tosa, ração, brinquedos e muito mais para o seu pet.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/servicos.css">
+</head>
+<body>
+
+  <header class="header" id="header">
+    <div class="container">
+      <a href="index.html" class="logo"><img src="assets/images/logo-horizontal.png" alt="Empório dos Bichos" loading="lazy"></a>
+      <nav class="nav" id="nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="sobre.html" class="nav-link">Sobre</a>
+        <a href="servicos.html" class="nav-link active">Serviços</a>
+        <a href="contato.html" class="nav-link">Contato</a>
+        <a href="localizacao.html" class="nav-link">Localização</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+    </div>
+    <div class="nav-overlay" id="navOverlay"></div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>Nossos Serviços</h1>
+      <p>Tudo o que o seu pet precisa em um só lugar, com atendimento personalizado</p>
+    </div>
+  </section>
+
+  <section class="section" id="servicos-lista">
+    <div class="container">
+      <div class="servicos-grid">
+
+        <!-- Banho e Tosa -->
+        <div class="servico-card reveal reveal-delay-1" id="servico-banho">
+          <div class="servico-card-image">
+            <svg viewBox="0 0 24 24"><path d="M7.5 5.6L5 7l1.4-2.5L5 2l2.5 1.4L10 2 8.6 4.5 10 7 7.5 5.6zm12 9.8L22 14l-1.4 2.5L22 19l-2.5-1.4L17 19l1.4-2.5L17 14l2.5 1.4zM22 2l-2.5 1.4L17 2l1.4 2.5L17 7l2.5-1.4L22 7l-1.4-2.5L22 2zm-7.63 5.29a.996.996 0 00-1.41 0L1.29 18.96a.996.996 0 000 1.41l2.34 2.34c.39.39 1.02.39 1.41 0L16.7 11.05a.996.996 0 000-1.41l-2.33-2.35z"/></svg>
+          </div>
+          <div class="servico-card-body">
+            <h3>Banho e Tosa</h3>
+            <p>Cuidamos da higiene e beleza do seu pet com carinho e profissionalismo. Banho completo, tosa higiênica e tosa na tesoura com produtos de qualidade.</p>
+            <a href="#" class="btn btn-whatsapp btn-sm" onclick="agendarServico('Banho e Tosa'); return false;">
+              <svg viewBox="0 0 24 24" fill="currentColor" style="width:16px;height:16px;"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
+              Agendar via WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <!-- Ração -->
+        <div class="servico-card reveal reveal-delay-2" id="servico-racao">
+          <div class="servico-card-image">
+            <svg viewBox="0 0 24 24"><path d="M11 9H9V2H7v7H5V2H3v7c0 2.12 1.66 3.84 3.75 3.97V22h2.5v-9.03C11.34 12.84 13 11.12 13 9V2h-2v7zm5-3v8h2.5v8H21V2c-2.76 0-5 2.24-5 4z"/></svg>
+          </div>
+          <div class="servico-card-body">
+            <h3>Ração e Alimentação</h3>
+            <p>As melhores marcas de ração para cães e gatos, com opções para todas as idades, portes e necessidades especiais do seu pet.</p>
+            <a href="#" class="btn btn-whatsapp btn-sm" onclick="agendarServico('Ração e Alimentação'); return false;">
+              <svg viewBox="0 0 24 24" fill="currentColor" style="width:16px;height:16px;"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
+              Consultar via WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <!-- Brinquedos -->
+        <div class="servico-card reveal reveal-delay-3" id="servico-brinquedos">
+          <div class="servico-card-image">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+          </div>
+          <div class="servico-card-body">
+            <h3>Brinquedos e Acessórios</h3>
+            <p>Diversão garantida! Brinquedos, coleiras, caminhas, roupinhas e acessórios para o dia a dia do seu pet.</p>
+            <a href="#" class="btn btn-whatsapp btn-sm" onclick="agendarServico('Brinquedos e Acessórios'); return false;">
+              <svg viewBox="0 0 24 24" fill="currentColor" style="width:16px;height:16px;"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
+              Consultar via WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <!-- Farmácia Pet -->
+        <div class="servico-card reveal reveal-delay-1" id="servico-farmacia">
+          <div class="servico-card-image">
+            <svg viewBox="0 0 24 24"><path d="M10.5 15H8v-3h2.5V9.5h3V12H16v3h-2.5v2.5h-3V15zM19 8v11c0 1.1-.9 2-2 2H7c-1.1 0-2-.9-2-2V8c0-1.1.9-2 2-2h1V4h2v2h4V4h2v2h1c1.1 0 2 .9 2 2zm-2 0H7v11h10V8z"/></svg>
+          </div>
+          <div class="servico-card-body">
+            <h3>Farmácia Pet</h3>
+            <p>Medicamentos, vermífugos, antipulgas e produtos de saúde para manter seu pet sempre protegido e saudável.</p>
+            <a href="#" class="btn btn-whatsapp btn-sm" onclick="agendarServico('Farmácia Pet'); return false;">
+              <svg viewBox="0 0 24 24" fill="currentColor" style="width:16px;height:16px;"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
+              Consultar via WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <!-- Produtos Cães -->
+        <div class="servico-card reveal reveal-delay-2" id="servico-caes">
+          <div class="servico-card-image">
+            <svg viewBox="0 0 24 24"><path d="M4.5 9.5a5 5 0 00-.46 2c0 2.76 2.24 5 5 5s5-2.24 5-5c0-.71-.16-1.39-.46-2H4.5zM9.04 1.5c-1.38 0-2.5 1.12-2.5 2.5s1.12 2.5 2.5 2.5 2.5-1.12 2.5-2.5-1.12-2.5-2.5-2.5zm5.5 4c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5 1.5-.67 1.5-1.5-.67-1.5-1.5-1.5zm-11 0c-.83 0-1.5.67-1.5 1.5S2.71 8.5 3.54 8.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5zm15 7a5 5 0 00-.46 2c0 2.76 2.24 5 5 5s5-2.24 5-5c0-.71-.16-1.39-.46-2h-9.08z"/></svg>
+          </div>
+          <div class="servico-card-body">
+            <h3>Produtos para Cães</h3>
+            <p>Linha completa de produtos especiais para cães: shampoos, condicionadores, petiscos e muito mais.</p>
+            <a href="#" class="btn btn-whatsapp btn-sm" onclick="agendarServico('Produtos para Cães'); return false;">
+              <svg viewBox="0 0 24 24" fill="currentColor" style="width:16px;height:16px;"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
+              Consultar via WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <!-- Produtos Gatos -->
+        <div class="servico-card reveal reveal-delay-3" id="servico-gatos">
+          <div class="servico-card-image">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+          </div>
+          <div class="servico-card-body">
+            <h3>Produtos para Gatos</h3>
+            <p>Tudo para o seu felino: areias, arranhadores, sachês, brinquedos e produtos especializados para gatos.</p>
+            <a href="#" class="btn btn-whatsapp btn-sm" onclick="agendarServico('Produtos para Gatos'); return false;">
+              <svg viewBox="0 0 24 24" fill="currentColor" style="width:16px;height:16px;"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
+              Consultar via WhatsApp
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-banner">
+    <div class="container">
+      <h2 class="reveal">Não encontrou o que procura?</h2>
+      <p class="reveal reveal-delay-1">Fale conosco e vamos te ajudar!</p>
+      <a href="#" class="btn btn-white btn-lg reveal reveal-delay-2" onclick="openWhatsApp(); return false;">Chamar no WhatsApp</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><a href="index.html" class="logo"><img src="assets/images/logo-horizontal.png" alt="Empório dos Bichos" loading="lazy"></a><p>Cuidando do seu pet com amor e dedicação.</p></div>
+        <div class="footer-links"><h4>Links Rápidos</h4><a href="index.html">Home</a><a href="sobre.html">Sobre</a><a href="servicos.html">Serviços</a><a href="contato.html">Contato</a><a href="localizacao.html">Localização</a></div>
+        <div class="footer-contact"><h4>Contato</h4><div class="contact-item"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg><span>Rua Vereador Hélcio Chambarelli, 313</span></div></div>
+        <div class="footer-social"><h4>Redes Sociais</h4><a href="https://instagram.com/emporiodosbichosk11" target="_blank" rel="noopener">📷 Instagram</a><a href="#" onclick="openWhatsApp(); return false;">💬 WhatsApp</a></div>
+      </div>
+      <div class="footer-bottom"><p>&copy; 2026 Empório dos Bichos. Todos os direitos reservados.</p></div>
+    </div>
+  </footer>
+
+  <a href="#" class="whatsapp-float" id="whatsappFloat" aria-label="WhatsApp"><span class="tooltip">Fale conosco!</span><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+
+  <script src="js/whatsapp.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

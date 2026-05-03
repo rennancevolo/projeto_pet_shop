@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Localização — Empório dos Bichos</title>
+  <meta name="description" content="Encontre o Empório dos Bichos: Rua Vereador Hélcio Chambarelli, 313. Veja o mapa, horário de funcionamento e como chegar.">
+  <meta property="og:title" content="Localização — Empório dos Bichos">
+  <meta property="og:description" content="Veja no mapa como chegar ao Empório dos Bichos.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/localizacao.css">
+</head>
+<body>
+
+  <header class="header" id="header">
+    <div class="container">
+      <a href="index.html" class="logo"><img src="assets/images/logo-horizontal.png" alt="Empório dos Bichos" loading="lazy"></a>
+      <nav class="nav" id="nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="sobre.html" class="nav-link">Sobre</a>
+        <a href="servicos.html" class="nav-link">Serviços</a>
+        <a href="contato.html" class="nav-link">Contato</a>
+        <a href="localizacao.html" class="nav-link active">Localização</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+    </div>
+    <div class="nav-overlay" id="navOverlay"></div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>Localização</h1>
+      <p>Encontre o Empório dos Bichos e venha nos visitar</p>
+    </div>
+  </section>
+
+  <section class="section" id="mapa">
+    <div class="container">
+      <!-- Full Map -->
+      <div class="location-map-full reveal" id="location-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14715.807587880176!2d-43.45301334374728!3d-22.767166369654902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x996705d523c261%3A0x2d054be680938c1c!2sEmporio%20do%20Bichos%20K11!5e0!3m2!1spt-BR!2sbr!4v1777763053618!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa do Empório dos Bichos"></iframe>
+      </div>
+
+      <!-- Details -->
+      <div class="location-details">
+        <div class="location-address reveal">
+          <h3>
+            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            Endereço
+          </h3>
+          <p>Rua Vereador Hélcio Chambarelli, 313</p>
+
+          <a href="https://www.google.com/maps/dir//Emporio+do+Bichos+K11" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="btnComoChegar">
+            <svg viewBox="0 0 24 24" fill="currentColor" style="width:20px;height:20px;"><path d="M21.71 11.29l-9-9a.996.996 0 00-1.41 0l-9 9a.996.996 0 000 1.41l9 9c.39.39 1.02.39 1.41 0l9-9a.996.996 0 000-1.41zM14 14.5V12h-4v3H8v-4c0-.55.45-1 1-1h5V7.5l3.5 3.5-3.5 3.5z"/></svg>
+            Como Chegar
+          </a>
+
+          <div class="location-references">
+            <h4>📍 Referências</h4>
+            <p>Empório dos Bichos K11 — fácil acesso e estacionamento na região.</p>
+          </div>
+        </div>
+
+        <div class="location-hours reveal reveal-delay-2">
+          <h3>
+            <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+            Horário de Funcionamento
+          </h3>
+          <table class="hours-table">
+            <tr>
+              <td>Segunda-feira</td>
+              <td>09:00 — 19:00</td>
+            </tr>
+            <tr>
+              <td>Terça-feira</td>
+              <td>09:00 — 19:00</td>
+            </tr>
+            <tr>
+              <td>Quarta-feira</td>
+              <td>09:00 — 19:00</td>
+            </tr>
+            <tr>
+              <td>Quinta-feira</td>
+              <td>09:00 — 19:00</td>
+            </tr>
+            <tr>
+              <td>Sexta-feira</td>
+              <td>09:00 — 19:00</td>
+            </tr>
+            <tr>
+              <td>Sábado</td>
+              <td>09:00 — 14:00</td>
+            </tr>
+            <tr>
+              <td>Domingo / Feriados</td>
+              <td>09:00 — 12:00</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-banner">
+    <div class="container">
+      <h2 class="reveal">Venha nos visitar!</h2>
+      <p class="reveal reveal-delay-1">Ou fale conosco pelo WhatsApp para mais informações</p>
+      <a href="#" class="btn btn-white btn-lg reveal reveal-delay-2" onclick="openWhatsApp(); return false;">Chamar no WhatsApp</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><a href="index.html" class="logo"><img src="assets/images/logo-horizontal.png" alt="Empório dos Bichos" loading="lazy"></a><p>Cuidando do seu pet com amor e dedicação.</p></div>
+        <div class="footer-links"><h4>Links Rápidos</h4><a href="index.html">Home</a><a href="sobre.html">Sobre</a><a href="servicos.html">Serviços</a><a href="contato.html">Contato</a><a href="localizacao.html">Localização</a></div>
+        <div class="footer-contact"><h4>Contato</h4><div class="contact-item"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg><span>Rua Vereador Hélcio Chambarelli, 313</span></div></div>
+        <div class="footer-social"><h4>Redes Sociais</h4><a href="https://instagram.com/emporiodosbichosk11" target="_blank" rel="noopener">📷 Instagram</a><a href="#" onclick="openWhatsApp(); return false;">💬 WhatsApp</a></div>
+      </div>
+      <div class="footer-bottom"><p>&copy; 2026 Empório dos Bichos. Todos os direitos reservados.</p></div>
+    </div>
+  </footer>
+
+  <a href="#" class="whatsapp-float" id="whatsappFloat" aria-label="WhatsApp"><span class="tooltip">Fale conosco!</span><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+
+  <script src="js/whatsapp.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
