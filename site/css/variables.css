@@ -1,35 +1,33 @@
 /* ========================================
-   Design Tokens — Empório dos Bichos
-   Paleta baseada na identidade visual da marca:
-   Azul corporativo + Laranja vibrante
+   Design Tokens - Emporio dos Bichos
    ======================================== */
 
 :root {
-  /* ---- Cores Primárias (Azul da Logo) ---- */
-  --color-primary: #0F6FB0;
-  --color-primary-dark: #0A5289;
-  --color-primary-light: #E6F2FB;
+  /* ---- Cores ---- */
+  --color-primary: #196fb3;
+  --color-primary-dark: #0d4c84;
+  --color-primary-light: #e8f3ff;
+  --color-primary-soft: #f3f8ff;
 
-  /* ---- Cores Secundárias (Laranja da Logo) ---- */
-  --color-secondary: #E87E1D;
-  --color-secondary-dark: #CC6A10;
-  --color-secondary-light: #FFF4E8;
+  --color-secondary: #f2871f;
+  --color-secondary-dark: #d56c05;
+  --color-secondary-light: #fff1df;
 
-  /* ---- Neutros ---- */
-  --color-bg: #FAFBFD;
-  --color-white: #FFFFFF;
-  --color-text: #1A2D3D;
-  --color-text-light: #5A7184;
-  --color-border: #D8E2EB;
-  --color-dark: #0E1F2E;
+  --color-bg: #f9fbfe;
+  --color-surface: #f2f6fb;
+  --color-surface-strong: #eaf2fb;
+  --color-white: #ffffff;
+  --color-text: #10243a;
+  --color-text-light: #59718b;
+  --color-border: #d7e3ef;
+  --color-dark: #0c2034;
 
-  /* ---- WhatsApp (mantido) ---- */
-  --color-whatsapp: #25D366;
-  --color-whatsapp-dark: #128C7E;
+  --color-whatsapp: #25d366;
+  --color-whatsapp-dark: #128c7e;
 
   /* ---- Typography ---- */
-  --font-heading: 'Playfair Display', Georgia, serif;
-  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-heading: 'Sora', 'Segoe UI', sans-serif;
+  --font-body: 'Manrope', 'Segoe UI', sans-serif;
 
   --text-xs: 0.75rem;
   --text-sm: 0.875rem;
@@ -38,9 +36,9 @@
   --text-xl: 1.25rem;
   --text-2xl: 1.5rem;
   --text-3xl: 2rem;
-  --text-4xl: 2.5rem;
-  --text-5xl: 3rem;
-  --text-6xl: 4rem;
+  --text-4xl: 2.75rem;
+  --text-5xl: 3.5rem;
+  --text-6xl: 4.5rem;
 
   /* ---- Spacing ---- */
   --space-xs: 0.25rem;
@@ -54,21 +52,21 @@
   --space-5xl: 8rem;
 
   /* ---- Layout ---- */
-  --max-width: 1200px;
-  --header-height: 80px;
+  --max-width: 1180px;
+  --header-height: 88px;
 
   /* ---- Shadows ---- */
-  --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
-  --shadow-md: 0 4px 12px rgba(0,0,0,0.1);
-  --shadow-lg: 0 8px 30px rgba(0,0,0,0.12);
-  --shadow-xl: 0 20px 60px rgba(0,0,0,0.15);
+  --shadow-sm: 0 6px 20px rgba(16, 36, 58, 0.06);
+  --shadow-md: 0 14px 40px rgba(16, 36, 58, 0.1);
+  --shadow-lg: 0 24px 60px rgba(16, 36, 58, 0.12);
+  --shadow-xl: 0 35px 90px rgba(16, 36, 58, 0.16);
 
   /* ---- Border Radius ---- */
-  --radius-sm: 8px;
-  --radius-md: 12px;
-  --radius-lg: 16px;
-  --radius-xl: 24px;
-  --radius-full: 50px;
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+  --radius-full: 999px;
 
   /* ---- Transitions ---- */
   --transition-fast: 0.2s ease;

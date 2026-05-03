@@ -4,12 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Empório dos Bichos — Pet Shop com Amor e Dedicação</title>
+  <title>Empório dos Bichos - Pet shop com cuidado e carinho</title>
   <meta name="description"
-    content="Empório dos Bichos: pet shop com banho, tosa, ração, brinquedos e remédios para cães e gatos. Atendimento com carinho na Rua Vereador Hélcio Chambarelli, 313.">
-  <meta property="og:title" content="Empório dos Bichos — Pet Shop com Amor e Dedicação">
+    content="Empório dos Bichos: pet shop com banho e tosa, rações, medicamentos, acessórios e atendimento familiar para cães e gatos.">
+  <meta property="og:title" content="Empório dos Bichos - Pet shop com cuidado e carinho">
   <meta property="og:description"
-    content="Cuidamos do seu pet com amor e dedicação. Banho, tosa, ração, brinquedos e muito mais.">
+    content="Tudo o que o seu pet precisa em um só lugar, com atendimento próximo, produtos selecionados e muito carinho.">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="pt_BR">
   <link rel="stylesheet" href="css/reset.css">
@@ -19,8 +19,6 @@
 </head>
 
 <body>
-
-  <!-- Header -->
   <header class="header" id="header">
     <div class="container">
       <a href="index.html" class="logo" id="logo">
@@ -32,6 +30,13 @@
         <a href="servicos.html" class="nav-link">Serviços</a>
         <a href="contato.html" class="nav-link">Contato</a>
         <a href="localizacao.html" class="nav-link">Localização</a>
+        <a href="#" class="nav-link nav-cta" onclick="openWhatsApp(); return false;">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+          </svg>
+          <span>Fale Conosco</span>
+        </a>
       </nav>
       <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
         <span></span><span></span><span></span>
@@ -40,183 +45,349 @@
     <div class="nav-overlay" id="navOverlay"></div>
   </header>
 
-  <!-- Hero -->
   <section class="hero" id="hero">
-    <div class="hero-bg">
-      <img src="assets/images/hero-banner.png" alt="" loading="eager">
-    </div>
-    <div class="hero-overlay"></div>
-    <div class="container">
-      <div class="hero-content">
-        <span class="hero-label">🐾 Bem-vindo ao Empório dos Bichos</span>
-        <h1>Cuidando do seu pet com <em>amor</em> e dedicação</h1>
-        <p>Mais do que um pet shop, somos um lugar de confiança para tutores que querem o melhor para seus companheiros.
-          Aqui, o amor pelos animais é a nossa essência.</p>
+    <div class="hero-ambient hero-ambient-left"></div>
+    <div class="hero-ambient hero-ambient-right"></div>
+
+    <div class="container hero-layout">
+      <div class="hero-copy reveal">
+        <span class="hero-label">Pet shop com atendimento familiar</span>
+        <h1>Tudo o que o seu pet precisa, com <span>cuidado de verdade</span>.</h1>
+        <p>Banho e tosa, rações, medicamentos e acessórios com atendimento próximo, ambiente acolhedor e atenção especial
+          para quem quer o melhor para cães e gatos.</p>
+
         <div class="hero-buttons">
           <a href="#" class="btn btn-whatsapp btn-lg" onclick="openWhatsApp(); return false;" id="heroCta">
             <svg viewBox="0 0 24 24" fill="currentColor">
               <path
                 d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
             </svg>
-            Fale Conosco
+            Fale pelo WhatsApp
           </a>
-          <a href="servicos.html" class="btn btn-outline btn-lg" id="heroServices">Nossos Serviços</a>
+          <a href="servicos.html" class="btn btn-ghost btn-lg" id="heroServices">Conheça os serviços</a>
+        </div>
+
+        <div class="hero-highlights">
+          <div class="hero-highlight">
+            <strong>Atendimento próximo</strong>
+            <span>Orientação cuidadosa para escolher o melhor para o seu pet.</span>
+          </div>
+          <div class="hero-highlight">
+            <strong>Produtos essenciais</strong>
+            <span>Rações, medicamentos e acessórios para a rotina completa.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal reveal-delay-2">
+        <div class="hero-photo-frame">
+          <img src="assets/images/about-petshop.png" alt="Banho e cuidado no Empório dos Bichos" loading="eager">
+        </div>
+
+        <div class="hero-badge">
+          <div class="hero-badge-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+            </svg>
+          </div>
+          <div>
+            <strong>Cuidado com carinho</strong>
+            <span>Banho e tosa com atenção especial e ambiente acolhedor.</span>
+          </div>
+        </div>
+
+        <div class="hero-floating-card">
+          <span class="floating-card-label">Na loja e no dia a dia</span>
+          <strong>Rações, farmácia pet, acessórios e atendimento rápido pelo WhatsApp.</strong>
+          <p>Facilidade para cuidar do seu pet em um só lugar.</p>
         </div>
       </div>
     </div>
-    <div class="hero-image">
-      <img src="assets/images/hero-banner.png" alt="Pet feliz no Empório dos Bichos" loading="eager">
+
+    <div class="hero-wave" aria-hidden="true"></div>
+  </section>
+
+  <section class="feature-strip-wrap" aria-label="Destaques do Empório dos Bichos">
+    <div class="container">
+      <div class="feature-strip">
+        <article class="feature-item reveal reveal-delay-1">
+          <div class="feature-item-icon">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 4a2 2 0 110 4 2 2 0 010-4zm-5 3a2 2 0 110 4 2 2 0 010-4zm10 0a2 2 0 110 4 2 2 0 010-4zm-8 5c-1.66 0-3 1.34-3 3 0 2.21 2.69 4 6 4s6-1.79 6-4c0-1.66-1.34-3-3-3-.88 0-1.68.38-2.23.98A3.48 3.48 0 0012 12c-.69 0-1.34.21-1.86.58A2.98 2.98 0 009 12z" />
+            </svg>
+          </div>
+          <div>
+            <h3>Rações Premium</h3>
+            <p>Marcas confiáveis para diferentes portes, fases e necessidades.</p>
+          </div>
+        </article>
+
+        <article class="feature-item reveal reveal-delay-2">
+          <div class="feature-item-icon">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M6 4h10a2 2 0 012 2v3h1a2 2 0 012 2v4h-2v5a1 1 0 01-1 1h-1v-6H7v6H6a1 1 0 01-1-1v-5H3v-4a2 2 0 012-2h1V6a2 2 0 012-2zm1 7h10V6H7v5zm2-3h2v2H9V8zm4 0h2v2h-2V8z" />
+            </svg>
+          </div>
+          <div>
+            <h3>Banho e Tosa</h3>
+            <p>Higiene e cuidado com foco no conforto e bem-estar do seu pet.</p>
+          </div>
+        </article>
+
+        <article class="feature-item reveal reveal-delay-3">
+          <div class="feature-item-icon">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M10.5 15H8v-3h2.5V9.5h3V12H16v3h-2.5v2.5h-3V15zM19 6h-2V4h-2v2H9V4H7v2H5a2 2 0 00-2 2v11a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2zm0 13H5V10h14v9z" />
+            </svg>
+          </div>
+          <div>
+            <h3>Farmácia Pet</h3>
+            <p>Medicamentos, cuidados e itens de suporte para a saúde do seu animal.</p>
+          </div>
+        </article>
+
+        <article class="feature-item reveal reveal-delay-4">
+          <div class="feature-item-icon">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M20 8h-3V4H1v13h2a3 3 0 006 0h6a3 3 0 006 0h2v-5l-3-4zM6 18.5A1.5 1.5 0 117.5 17 1.5 1.5 0 016 18.5zm12 0a1.5 1.5 0 111.5-1.5A1.5 1.5 0 0118 18.5zM17 9.5h2.2l1.5 2H17z" />
+            </svg>
+          </div>
+          <div>
+            <h3>Entregas e agilidade</h3>
+            <p>Contato fácil pelo WhatsApp para orientar pedidos e atendimentos.</p>
+          </div>
+        </article>
+      </div>
     </div>
   </section>
 
-  <!-- About Preview -->
   <section class="section" id="sobre-preview">
     <div class="container">
-      <div class="about-preview">
-        <div class="about-preview-img reveal">
-          <img src="assets/images/about-petshop.png" alt="Cuidando de pets com carinho" loading="lazy">
+      <div class="store-showcase">
+        <div class="store-copy reveal">
+          <span class="section-label section-label-left">Conheça nossa loja</span>
+          <h2>Uma estrutura completa para atender com qualidade e proximidade.</h2>
+          <p>O Empório dos Bichos reúne atendimento acolhedor, variedade de produtos e um espaço pensado para facilitar a
+            rotina de quem quer cuidar bem do seu pet.</p>
+
+          <div class="store-points">
+            <div class="store-point">
+              <div class="store-point-icon">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M12 2a5 5 0 00-5 5c0 4.25 5 10 5 10s5-5.75 5-10a5 5 0 00-5-5zm0 7a2 2 0 110-4 2 2 0 010 4zm-7 9h14v2H5z" />
+                </svg>
+              </div>
+              <div>
+                <strong>Loja física acolhedora</strong>
+                <span>Ambiente organizado para receber você e seu pet com tranquilidade.</span>
+              </div>
+            </div>
+
+            <div class="store-point">
+              <div class="store-point-icon">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M3 6h18v2H3zm2 4h14v2H5zm-2 4h18v2H3zm3 4h12v2H6z" />
+                </svg>
+              </div>
+              <div>
+                <strong>Variedade para o dia a dia</strong>
+                <span>Rações, medicamentos e acessórios para cães e gatos em um só lugar.</span>
+              </div>
+            </div>
+
+            <div class="store-point">
+              <div class="store-point-icon">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M12 1a11 11 0 00-9.54 16.5L1 23l5.77-1.51A11 11 0 1012 1zm0 20a8.97 8.97 0 01-4.56-1.24l-.33-.19-3.42.9.92-3.34-.22-.34A9 9 0 1112 21z" />
+                </svg>
+              </div>
+              <div>
+                <strong>Contato rápido e humano</strong>
+                <span>Atendimento prático pelo WhatsApp para dúvidas, pedidos e agendamentos.</span>
+              </div>
+            </div>
+          </div>
+
+          <a href="sobre.html" class="btn btn-outline">Saiba mais sobre nós</a>
         </div>
-        <div class="about-preview-text reveal reveal-delay-2">
-          <span class="section-label" style="text-align:left;width:auto;">Nossa História</span>
-          <h2>Um lugar de <em style="color:var(--color-primary);font-style:normal;">confiança</em> para o seu pet</h2>
-          <p>Desde o início, nascemos de um propósito simples, mas muito forte: cuidar dos animais com o mesmo amor e
-            dedicação que temos pelos nossos próprios.</p>
-          <p>Fundado por uma família apaixonada por pets, nosso espaço foi criado pensando no bem-estar, na segurança e
-            na felicidade de cada animal que passa por aqui.</p>
-          <a href="sobre.html" class="btn btn-outline">Conheça Nossa História</a>
+
+        <div class="store-visual reveal reveal-delay-2">
+          <figure class="store-main-photo">
+            <img src="assets/images/hero-banner.png" alt="Fachada do Empório dos Bichos" loading="lazy">
+          </figure>
+          <div class="store-side-stack">
+            <div class="store-info-card">
+              <span>Endereço</span>
+              <strong>Rua Vereador Hélcio Chambarelli, 313</strong>
+              <p>Loja física pronta para atender com praticidade e carinho.</p>
+            </div>
+            <div class="store-info-card accent">
+              <span>WhatsApp</span>
+              <strong>(21) 97260-9360</strong>
+              <p>Fale com a equipe e receba orientação rápida para o que seu pet precisar.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Services -->
   <section class="section section-alt" id="servicos-home">
     <div class="container">
-      <span class="section-label reveal">O que oferecemos</span>
-      <h2 class="section-title reveal">Nossos Serviços</h2>
-      <p class="section-subtitle reveal">Tudo o que o seu pet precisa em um só lugar, com atendimento personalizado e
-        muito carinho.</p>
+      <span class="section-label reveal">O que você encontra aqui</span>
+      <h2 class="section-title reveal">Serviços e produtos pensados para a rotina completa do seu pet.</h2>
+      <p class="section-subtitle reveal">Da higiene ao cuidado diário, reunimos itens essenciais e atendimento atencioso
+        para facilitar suas escolhas.</p>
+
       <div class="services-grid">
         <div class="card service-card reveal reveal-delay-1">
           <div class="service-card-icon">
             <svg viewBox="0 0 24 24">
               <path
-                d="M7.5 5.6L5 7l1.4-2.5L5 2l2.5 1.4L10 2 8.6 4.5 10 7 7.5 5.6zm12 9.8L22 14l-1.4 2.5L22 19l-2.5-1.4L17 19l1.4-2.5L17 14l2.5 1.4zM22 2l-2.5 1.4L17 2l1.4 2.5L17 7l2.5-1.4L22 7l-1.4-2.5L22 2zm-7.63 5.29a.996.996 0 00-1.41 0L1.29 18.96a.996.996 0 000 1.41l2.34 2.34c.39.39 1.02.39 1.41 0L16.7 11.05a.996.996 0 000-1.41l-2.33-2.35z" />
+                d="M6 4h10a2 2 0 012 2v3h1a2 2 0 012 2v4h-2v5a1 1 0 01-1 1h-1v-6H7v6H6a1 1 0 01-1-1v-5H3v-4a2 2 0 012-2h1V6a2 2 0 012-2z" />
             </svg>
           </div>
-          <h3>Banho e Tosa</h3>
-          <p>Cuidamos da higiene e beleza do seu pet com carinho e profissionalismo.</p>
+          <h3>Banho e tosa com cuidado</h3>
+          <p>Serviço pensado para o conforto do pet, com atenção especial à higiene e ao bem-estar.</p>
+          <span class="service-card-meta">Cuidado diário</span>
         </div>
+
         <div class="card service-card reveal reveal-delay-2">
           <div class="service-card-icon">
             <svg viewBox="0 0 24 24">
               <path
-                d="M11 9H9V2H7v7H5V2H3v7c0 2.12 1.66 3.84 3.75 3.97V22h2.5v-9.03C11.34 12.84 13 11.12 13 9V2h-2v7zm5-3v8h2.5v8H21V2c-2.76 0-5 2.24-5 4z" />
+                d="M12 4a2 2 0 110 4 2 2 0 010-4zm-5 3a2 2 0 110 4 2 2 0 010-4zm10 0a2 2 0 110 4 2 2 0 010-4zm-8 5c-1.66 0-3 1.34-3 3 0 2.21 2.69 4 6 4s6-1.79 6-4c0-1.66-1.34-3-3-3-.88 0-1.68.38-2.23.98A3.48 3.48 0 0012 12c-.69 0-1.34.21-1.86.58A2.98 2.98 0 009 12z" />
             </svg>
           </div>
-          <h3>Ração e Alimentação</h3>
-          <p>As melhores marcas de ração para cães e gatos, para todas as idades e portes.</p>
+          <h3>Rações para diferentes perfis</h3>
+          <p>Opções para cães e gatos de vários portes, idades e necessidades nutricionais.</p>
+          <span class="service-card-meta">Alimentação</span>
         </div>
+
         <div class="card service-card reveal reveal-delay-3">
           <div class="service-card-icon">
             <svg viewBox="0 0 24 24">
               <path
-                d="M4.5 9.5a5 5 0 00-.46 2c0 2.76 2.24 5 5 5s5-2.24 5-5c0-.71-.16-1.39-.46-2M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8 0-1.85.63-3.55 1.69-4.9L16.9 18.31C15.55 19.37 13.85 20 12 20zm6.31-3.1L7.1 5.69C8.45 4.63 10.15 4 12 4c4.42 0 8 3.58 8 8 0 1.85-.63 3.55-1.69 4.9z" />
+                d="M10.5 15H8v-3h2.5V9.5h3V12H16v3h-2.5v2.5h-3V15zM19 6h-2V4h-2v2H9V4H7v2H5a2 2 0 00-2 2v11a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2z" />
             </svg>
           </div>
-          <h3>Brinquedos e Acessórios</h3>
-          <p>Diversão garantida com coleiras, caminhas, roupinhas e muito mais.</p>
+          <h3>Medicamentos e farmácia pet</h3>
+          <p>Itens de apoio à saúde e ao cuidado preventivo para manter seu pet protegido.</p>
+          <span class="service-card-meta">Saúde</span>
         </div>
+
         <div class="card service-card reveal reveal-delay-1">
           <div class="service-card-icon">
             <svg viewBox="0 0 24 24">
               <path
-                d="M10.5 15H8v-3h2.5V9.5h3V12H16v3h-2.5v2.5h-3V15zM19 8v11c0 1.1-.9 2-2 2H7c-1.1 0-2-.9-2-2V8c0-1.1.9-2 2-2h1V4h2v2h4V4h2v2h1c1.1 0 2 .9 2 2zm-2 0H7v11h10V8z" />
+                d="M4 8a4 4 0 118 0v8a4 4 0 11-8 0V8zm9 1h7v2h-7zm0 4h7v2h-7zm0 4h7v2h-7z" />
             </svg>
           </div>
-          <h3>Farmácia Pet</h3>
-          <p>Medicamentos, vermífugos e antipulgas para manter seu pet protegido.</p>
+          <h3>Acessórios para a rotina</h3>
+          <p>Itens que ajudam no conforto, organização e praticidade do dia a dia com o seu animal.</p>
+          <span class="service-card-meta">Conforto</span>
         </div>
+
         <div class="card service-card reveal reveal-delay-2">
           <div class="service-card-icon">
             <svg viewBox="0 0 24 24">
               <path
-                d="M4.5 9.5C4.5 5.36 7.86 2 12 2s7.5 3.36 7.5 7.5c0 5.25-7.5 12.5-7.5 12.5S4.5 14.75 4.5 9.5zm4.47-1.57a2.116 2.116 0 000 3l3.03 3.03 3.03-3.03a2.116 2.116 0 000-3 2.116 2.116 0 00-3 0l-.03.03-.03-.03a2.116 2.116 0 00-3 0z" />
+                d="M20 8h-3V4H1v13h2a3 3 0 006 0h6a3 3 0 006 0h2v-5l-3-4zM6 18.5A1.5 1.5 0 117.5 17 1.5 1.5 0 016 18.5zm12 0a1.5 1.5 0 111.5-1.5A1.5 1.5 0 0118 18.5zM17 9.5h2.2l1.5 2H17z" />
             </svg>
           </div>
-          <h3>Produtos para Cães</h3>
-          <p>Linha completa de shampoos, condicionadores, petiscos e muito mais.</p>
+          <h3>Agilidade no atendimento</h3>
+          <p>Canal direto para consultar produtos, receber orientações e agilizar seu pedido.</p>
+          <span class="service-card-meta">Praticidade</span>
         </div>
+
         <div class="card service-card reveal reveal-delay-3">
           <div class="service-card-icon">
             <svg viewBox="0 0 24 24">
               <path
-                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" />
+                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
             </svg>
           </div>
-          <h3>Produtos para Gatos</h3>
-          <p>Tudo para o seu felino: areias, arranhadores, sachês e acessórios.</p>
+          <h3>Atendimento com carinho</h3>
+          <p>Um espaço familiar, feito para tratar cada pet com atenção, respeito e proximidade.</p>
+          <span class="service-card-meta">Confiança</span>
         </div>
       </div>
-      <div class="text-center reveal" style="padding-top: var(--space-3xl);">
-        <a href="servicos.html" class="btn btn-primary">Ver Todos os Serviços</a>
+
+      <div class="section-actions reveal">
+        <a href="servicos.html" class="btn btn-primary">Ver todos os serviços</a>
       </div>
     </div>
   </section>
 
-  <!-- Info Strip -->
   <section class="section" id="info-home">
     <div class="container">
-      <div class="info-strip">
-        <div class="info-item reveal reveal-delay-1">
-          <div class="info-item-icon">
-            <svg viewBox="0 0 24 24">
-              <path
-                d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
-            </svg>
-          </div>
-          <div>
-            <h4>Localização</h4>
-            <p>Rua Vereador Hélcio Chambarelli, 313</p>
-            <a href="localizacao.html" style="color:var(--color-primary);font-size:var(--text-sm);font-weight:600;">Ver
-              no mapa →</a>
-          </div>
-        </div>
-        <div class="info-item reveal reveal-delay-2">
-          <div class="info-item-icon">
-            <svg viewBox="0 0 24 24">
-              <path
-                d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z" />
-            </svg>
-          </div>
-          <div>
-            <h4>Horário</h4>
-            <p>Seg a Sex: 09h às 19h<br>Sáb: 09h às 14h<br>Dom e Feriados: 09h às 12h</p>
-          </div>
-        </div>
-        <div class="info-item reveal reveal-delay-3">
-          <div class="info-item-icon">
-            <svg viewBox="0 0 24 24" fill="currentColor">
-              <path
-                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
-            </svg>
-          </div>
-          <div>
-            <h4>WhatsApp</h4>
-            <p>(21) 97260-9360</p>
-            <a href="#" onclick="openWhatsApp(); return false;"
-              style="color:var(--color-primary);font-size:var(--text-sm);font-weight:600;">Enviar mensagem →</a>
-          </div>
+      <span class="section-label reveal">Por que escolher o Empório dos Bichos</span>
+      <h2 class="section-title reveal">Uma experiência acolhedora para quem cuida do pet como parte da família.</h2>
+      <p class="section-subtitle reveal">Mais do que vender produtos, queremos facilitar sua rotina com confiança,
+        atenção e um atendimento que faz diferença.</p>
+
+      <div class="trust-shell reveal reveal-delay-1">
+        <div class="trust-grid">
+          <article class="trust-item">
+            <div class="trust-item-icon">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+              </svg>
+            </div>
+            <h3>Amor que se percebe</h3>
+            <p>Cuidamos dos pets com atenção, proximidade e um atendimento realmente humano.</p>
+          </article>
+
+          <article class="trust-item">
+            <div class="trust-item-icon">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M12 1l3.09 6.26L22 8.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 13.14 2 8.27l6.91-1.01z" />
+              </svg>
+            </div>
+            <h3>Seleção de qualidade</h3>
+            <p>Produtos pensados para apoiar a saúde, o conforto e o dia a dia do seu pet.</p>
+          </article>
+
+          <article class="trust-item">
+            <div class="trust-item-icon">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M4 4h16v2H4zm0 5h10v2H4zm0 5h16v2H4zm0 5h10v2H4zM17 8l4 4-4 4z" />
+              </svg>
+            </div>
+            <h3>Orientação prática</h3>
+            <p>Equipe acessível para ajudar em dúvidas, pedidos e no que fizer sentido para seu momento.</p>
+          </article>
+
+          <article class="trust-item">
+            <div class="trust-item-icon">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 7a2 2 0 110-4 2 2 0 010 4z" />
+              </svg>
+            </div>
+            <h3>Loja física presente</h3>
+            <p>Um espaço real, organizado e pronto para receber você com praticidade e confiança.</p>
+          </article>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CTA Banner -->
   <section class="cta-banner">
     <div class="container">
-      <h2 class="reveal">Agende agora pelo WhatsApp</h2>
-      <p class="reveal reveal-delay-1">Atendimento rápido e personalizado para o seu pet</p>
+      <h2 class="reveal">Fale conosco e cuide do seu pet com mais tranquilidade.</h2>
+      <p class="reveal reveal-delay-1">Estamos prontos para ajudar com produtos, orientações e atendimento rápido.</p>
       <a href="#" class="btn btn-white btn-lg reveal reveal-delay-2" onclick="openWhatsApp(); return false;"
         id="ctaWhatsapp">
         <svg viewBox="0 0 24 24" fill="currentColor" style="width:22px;height:22px;fill:var(--color-whatsapp);">
@@ -228,7 +399,6 @@
     </div>
   </section>
 
-  <!-- Footer -->
   <footer class="footer" id="footer">
     <div class="container">
       <div class="footer-grid">
@@ -236,17 +406,18 @@
           <a href="index.html" class="logo">
             <img src="assets/images/logo-horizontal.png" alt="Empório dos Bichos" loading="lazy">
           </a>
-          <p>Cuidando do seu pet com amor e dedicação. Aqui, o amor pelos animais não é só parte do nosso trabalho… é a
-            nossa essência.</p>
+          <p>Cuidando do seu pet com carinho, praticidade e atenção em cada detalhe do atendimento.</p>
         </div>
+
         <div class="footer-links">
-          <h4>Links Rápidos</h4>
+          <h4>Links rápidos</h4>
           <a href="index.html">Home</a>
           <a href="sobre.html">Sobre</a>
           <a href="servicos.html">Serviços</a>
           <a href="contato.html">Contato</a>
           <a href="localizacao.html">Localização</a>
         </div>
+
         <div class="footer-contact">
           <h4>Informações</h4>
           <div class="contact-item">
@@ -260,22 +431,23 @@
               <path
                 d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z" />
             </svg>
-            <span>Seg-Sex: 09h-19h<br>Sáb: 09h-14h<br>Dom: 09h-12h</span>
+            <span>Seg-Sex: 09h às 19h<br>Sáb: 09h às 14h<br>Dom e feriados: 09h às 12h</span>
           </div>
         </div>
+
         <div class="footer-social">
-          <h4>Redes Sociais</h4>
-          <a href="https://instagram.com/emporiodosbichosk11" target="_blank" rel="noopener noreferrer">📷 Instagram</a>
-          <a href="#" onclick="openWhatsApp(); return false;">💬 WhatsApp</a>
+          <h4>Redes sociais</h4>
+          <a href="https://instagram.com/emporiodosbichosk11" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="#" onclick="openWhatsApp(); return false;">WhatsApp</a>
         </div>
       </div>
+
       <div class="footer-bottom">
         <p>&copy; 2026 Empório dos Bichos. Todos os direitos reservados.</p>
       </div>
     </div>
   </footer>
 
-  <!-- WhatsApp Float -->
   <a href="#" class="whatsapp-float" id="whatsappFloat" aria-label="Fale conosco pelo WhatsApp">
     <span class="tooltip">Fale conosco!</span>
     <svg viewBox="0 0 24 24">
