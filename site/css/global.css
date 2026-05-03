@@ -194,8 +194,8 @@ img {
   position: fixed;
   inset: 0;
   background: rgba(0, 0, 0, 0.50); /* mais escuro */
-  backdrop-filter: blur(4px); /* blur elegante */
-  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: none; /* blur elegante */
+  -webkit-backdrop-filter: none;
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease, visibility 0.3s ease;
