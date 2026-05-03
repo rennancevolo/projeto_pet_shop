@@ -627,6 +627,13 @@ img {
 @media (max-width: 768px) {
   .menu-toggle {
     display: flex;
+    position: relative;
+    z-index: 1200;
+  }
+
+  .logo {
+    position: relative;
+    z-index: 1000;
   }
 
   .nav {
@@ -644,11 +651,17 @@ img {
     padding: 0 var(--space-xl);
     box-shadow: var(--shadow-xl);
     transition: right var(--transition-base);
-    z-index: 999;
+    z-index: 1100;
   }
 
   .nav.open {
     right: 0;
+  }
+
+  .nav-overlay {
+    z-index: 1090;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
   }
 
   .nav-link {
@@ -679,6 +692,7 @@ img {
     padding: 0 var(--space-lg);
   }
 
+  /* mantém o tamanho da logo */
   .logo img {
     height: 46px;
   }
